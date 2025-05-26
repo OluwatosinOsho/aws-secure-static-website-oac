@@ -1,54 +1,65 @@
-/* style.css */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 40px;
-    line-height: 1.8;
-    color: #333;
-    background-color: #f4f4f4;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* A vibrant, yet smooth gradient background */
+    background: linear-gradient(135deg, #FFC107, #FF5722); /* Orange to deep orange */
+    color: #333; /* Dark gray for good readability */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures content takes full viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #007bff; /* A nice blue */
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+    background-color: #ffffff; /* Clean white background for the content box */
+    padding: 40px;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger, more noticeable shadow */
+    text-align: center;
+    max-width: 800px; /* Maximum width for content */
+    width: 90%; /* Responsive width */
+    margin: 20px auto; /* Centered with some vertical margin */
 }
 
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Makes it round */
-    object-fit: cover; /* Ensures image covers area without distortion */
-    border: 4px solid #007bff;
+    border-radius: 50%; /* Makes the image perfectly circular */
+    border: 5px solid #007bff; /* A striking blue border around the image */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Glowing effect for the image */
+}
+
+h1 {
+    color: #0056b3; /* A strong blue for the main heading */
+    font-size: 2.5em; /* Larger, more impactful heading */
     margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger paragraph text */
+    margin-bottom: 15px;
+    color: #555; /* Slightly lighter gray for paragraph text */
+}
+
+p strong {
+    color: #d9534f; /* A bold, eye-catching red for strong text */
+    font-weight: bold;
 }
 
 .footer {
     margin-top: 30px;
-    font-size: 0.9em;
-    color: #888;
-    border-top: 1px solid #eee;
     padding-top: 20px;
+    border-top: 1px solid #eee; /* Light separator line */
+    font-size: 0.9em;
+    color: #777; /* Lighter color for footer text */
 }
 
-/* Link back to homepage for error.html */
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+.footer p {
+    margin: 5px 0;
 }
