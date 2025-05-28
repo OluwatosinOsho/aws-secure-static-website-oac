@@ -1,0 +1,25 @@
+# --- Operating System Files ---
+.DS_Store             # macOS directory service stores
+Thumbs.db             # Windows thumbnail caches
+desktop.ini           # Windows desktop customization
+
+# --- Editor/IDE Specific Files ---
+.vscode/              # Visual Studio Code settings
+.idea/                # IntelliJ IDEA project files
+*.sublime-project     # Sublime Text project files
+*.sublime-workspace   # Sublime Text workspace files
+
+# --- Log and Temp Files ---
+*.log                 # Log files
+*.tmp                 # Temporary files
+temp/                 # General temporary directory
+logs/                 # General logs directory
+
+# --- Environment Files ---
+.env                  # Environment variable files (e.g., for local script testing)
+.env.* # Catch-all for .env.development, .env.production, etc.
+
+# --- AWS CLI Cache/Config (CRITICAL: NEVER commit these!) ---
+# This ensures that your AWS credentials and configuration are NOT accidentally pushed.
+# These files might be created in your home directory or within your project if you configure AWS CLI specifically there.
+.aws/
